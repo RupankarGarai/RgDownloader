@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Charset and Viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+   
+    <!-- General SEO Meta Tags -->
+    <meta name="description" content="Download and convert videos from YouTube, Facebook, and Instagram to MP3 and MP4 formats with our fast and secure tool. Free and easy to use!">
+    <meta name="keywords" content="video downloader, MP3 converter, YouTube video download, Facebook video save, Instagram video downloader, video to MP3, MP4 converter, YouTube MP3 download, Facebook video converter, Instagram video save, online video downloader, video to MP4 converter, YouTube audio extractor, Facebook MP3 converter, Instagram media downloader, high-quality video download, YouTube video to MP4, Instagram video converter, Facebook video download tool, MP3 extraction from video, YouTube playlist downloader, Facebook video extraction, Instagram video to MP3, video conversion tool, YouTube video downloader online, Facebook to MP3 converter, Instagram media save, MP4 video download, video to MP3 extraction, YouTube downloader software, Facebook video to MP4, Instagram video download online, MP3 audio downloader, video download service, YouTube MP3 converter online, Facebook MP4 download tool, Instagram video extraction tool, convert YouTube video to MP3, download video from Instagram, Facebook video saver, Instagram media downloader online, video downloader app, YouTube video extraction, MP3 and MP4 converter, Facebook video to audio, Instagram video download service, YouTube video save tool, video and audio converter, MP4 to MP3 converter, download video from Facebook">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="DownloadSaver">
+    <meta name="language" content="en">
+    <meta name="google" content="notranslate">
+    <meta name="rating" content="General">
+    <meta name="revisit-after" content="7 days">
+    <meta name="expires" content="0">
+    <meta name="robot" content="index, follow">
+    <meta name="distribution" content="global">
+    <meta name="coverage" content="Worldwide">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RgDownloader</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<header>
+    <h1>RgDownloader</h1>
+    <div class="header-links">
+        <p>Download Videos, Shorts, Reels, and More from YouTube, Instagram, Facebook, Twitter, and beyond!</p>
+    </div>
+    
+</header>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="form-group">
+                    <input id="inputUrl" type="url" class="form-control" placeholder="Enter link here...">
+                </div>
+                <button id="downloadBtn" onclick="openbox()" type="submit" class="btn btn-primary">Download</button>
+            </div>
+        </div>
+    <div id="loading" class="text-center mt-3" style="display: none;">
+        <div class="centerV">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        </div>
+    </div>
+        <div id="container" class="text-center mt-3" style="display: none;">
+            <div id="thumb" class="mb-3"></div>
+            <div id="title"></div>
+            <div id="description" class="mt-3"></div>
+            <div id="uploader"></div>
+            <div id="duration"></div>
+            <div id="extractor"></div>
+            <div id="downloadURL"></div>
+            <div id="download"></div>
+        </div>
+        <div id="content" class="text-center mt-3">
+            <p>RgDownloader is a top-notch service that lets you download videos, Shorts, and Reels from all major platforms, including YouTube, Instagram, Facebook, Twitter, and more. With its intuitive interface, you can swiftly and effortlessly save videos, thumbnails, and audio files in various formats, completely free of charge. Whether you need content for offline viewing or personal use, RgDownloader provides a smooth and hassle-free experience every time.</p>
+        </div>
+        
+    </div>
+
+    <section class="features">
+        <h2>Key Features</h2>
+        <ul class="feature-list">
+            <li class="feature-item">
+                <img src="img/multi.webp" alt="Multi-Platform Support">
+                <h3>Multi-Platform Support</h3>
+                <p>Seamlessly download videos from a wide range of platforms including YouTube, Instagram, Facebook, Twitter, and more.</p>
+            </li>
+            <li class="feature-item">
+                <img src="img/high.png" alt="High-Quality Downloads">
+                <h3>High-Quality Downloads</h3>
+                <p>Get videos in high resolutions such as Full HD, 2K, and 4K, ensuring crystal-clear quality every time.</p>
+            </li>
+            <li class="feature-item">
+                <img src="img/speed.avif" alt="Fast and Easy">
+                <h3>Fast and Easy</h3>
+                <p>Enjoy a user-friendly experience with quick download speeds and an intuitive interface that makes downloading videos a breeze.</p>
+            </li>
+            <li class="feature-item">
+                <img src="img/free.jpeg" alt="Free of Charge">
+                <h3>Completely Free</h3>
+                <p>Access all our downloading features without any cost. No hidden fees, just straightforward video and thumbnail downloads.</p>
+            </li>
+        </ul>
+    </section>
+    
+
+
+
+    <section class="how-to" id="click-here">
+        <h2>How to Download Videos, Shorts, and Reels in 4 Easy Steps</h2>
+        <ol>
+            <li>Open the app or website where the video is hosted (e.g., YouTube, Instagram, Facebook, Twitter).</li>
+            <li>Find the video, Short, or Reel you want to download, click on the Share button, and select Copy link.</li>
+            <li>Go to RgDownloader, paste the copied link into the search box, and click the Download button.</li>
+            <li>Click Download to save the file to your device and enjoy downloaded videos</li>
+        </ol>
+    </section>
+    
+    
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What is RgDownloader?</h3>
+            <p>RgDownloader is a versatile tool that allows you to download videos, Shorts, Reels, and audio from popular platforms like YouTube, Instagram, Facebook, Twitter, and more. It supports various formats such as MP4 and MP3 and provides high-quality downloads with a user-friendly interface, all completely free of charge.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I download videos quickly?</h3>
+            <p>To download videos swiftly: Open the app or website where the video is hosted (e.g., YouTube, Instagram), find the video, Shorts, or Reel you want, click Share, and select Copy link. Go to RgDownloader, paste the link into the search box, and click Download.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I download videos on Android?</h3>
+            <p>Copy the video link from the app or website, visit RgDownloader, paste the link into the search box, and click Download.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I download videos on iPhone?</h3>
+            <p>Use Safari or the Documents by Readdle app on iOS 13 or later. Open RgDownloader, paste the video link into the search box, and click Download.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I ensure the highest quality video download?</h3>
+            <p>RgDownloader allows you to download videos in high resolutions, including Full HD, 2K, and 4K, ensuring you get the best quality available.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Is there a fee for using RgDownloader?</h3>
+            <p>No, RgDownloader provides free access to download videos, Shorts, Reels, and audio without any limitations or charges.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Where can I find my downloaded videos?</h3>
+            <p>Your downloaded videos can be found in the "Downloads" folder on your device or the "Download History" section of your browser.</p>
+        </div>
+    </section>
+    
+</main>
+
+<!-- <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>DownloadSaver is a premier tool for downloading videos, Shorts, Reels, and audio from major platforms such as YouTube, Instagram, Facebook, Twitter, and more. Experience high-quality downloads in MP4 and MP3 formats, all completely free. Our user-friendly interface ensures a seamless and enjoyable experience.</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/rupankargarai/" target="_blank" class="social-icon linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/RupankarGarai2003" target="_blank" class="social-icon github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://rupankargarai2003.github.io/RupankarGarai/" target="_blank" class="social-icon portfolio" aria-label="Portfolio"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: <a href="mailto:rupankargarai55@gmail.com">rupankargarai55@gmail.com</a></p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Designed and Developed by <a href="https://rupankargarai2003.github.io/RupankarGarai/" target="_blank" style="color: #ff4d4d;">Rupankar Garai</a></p>
+        <p>© 2024 DownloadSaver. All rights reserved.</p>
+    </div>
+</footer> -->
+
+
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+    
+</body>
+
+</html>
